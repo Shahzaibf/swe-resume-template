@@ -11,7 +11,7 @@
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage[left=1.5cm,right=1.5cm,top=1.6cm,bottom=1.6cm]{geometry}
-\usepackage[pdfusetitle]{hyperref}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
 \usepackage{multicol}
 \usepackage[sfdefault,condensed]{roboto}
 \usepackage[fontsize=11]{scrextend}
@@ -126,10 +126,11 @@
 \Header{
     \Chapter{Shahzaib Fareed}\\
     Full-Stack Software Engineer in New York City\\
+    \href{https://github.com/shahzaibf}{github.com/shahzaibf}\\
 }{
     shahzaibfareed1118@gmail.com\\
     (631) 710-9297\\
-    shahzaibfareed.com\\
+    \href{https://shahzaibfareed.com}{shahzaibfareed.com}\\
 }
 
 \Section{Education}
@@ -138,44 +139,42 @@
 \Content
 
 \Section{Experience}
-\Subsection{DCB.com}{}{}
+\Subsection{DCB.com}{{\color{gray}\ \textbar\ React, TypeScript, TanStack Router, tRPC, Tailwind CSS, Node.js, Figma}}{}
 \Subsubsection{\textbf{Software Engineering Intern}}{Jun 2026 - Jul 2026}
 \ContentList{
-    \Item{}{Built and designed React, TypeScript, TanStack Router, tRPC, and Tailwind CSS frontend features for a fintech banking application, extending an existing backend architecture.}
-    \Item{}{Improved DCB’s marketing site by fixing UI issues, refining Tailwind CSS layouts, updating styling, and enhancing page presentation.}
-    \Item{}{Integrated React frontend screens with Node.js backend APIs using tRPC, creating reusable components with form handling, loading states, and error states that streamlined data entry and lowered error reports.}
+\Item{}{Built the frontend of a fintech banking web app in React, TypeScript, TanStack Router, and Tailwind CSS, turning Figma designs into responsive, production-ready UI on top of existing backend services.}
+\Item{}{Implemented core banking workflows (authentication, account management, transactions, and card controls) on a library of reusable React components for consistent UI.}
+\Item{}{Connected the frontend to Node.js backend services through type-safe tRPC procedures, adding form validation, loading states, and error handling for reliable user interactions.}
 }
-\Subsection{Career Launch Tech Initiative}{}{}
+\Subsection{Career Launch Tech Initiative}{{\color{gray}\ \textbar\ React.js, Node.js, Express.js, RESTful APIs}}{}
 \Subsubsection{\textbf{Software Engineering Intern}}{Feb 2026 - May 2026}
 \ContentList{
-    \Item{}{Built and shipped five full-stack features with React.js and Node.js, collaborating with engineers to add new product functions, which expanded functionality and received positive feedback from users.}
-    \Item{}{Designed and implemented 10+ RESTful API endpoints, improving backend performance, reliability, and scalability.}
-    \Item{}{Integrated AI-driven features into core product workflows, reducing manual user actions by $\sim$30\% and improving automation.}
-    \Item{}{Developed responsive frontend components with React.js, improving UX consistency across multiple features.}
-    \Item{}{Leveraged AI tools such as Claude Code to speed up development and debug backend services, cutting development time for full-stack features by roughly 20\%.}
+    \Item{}{Overhauled the AI Resume feature end to end in React and Node.js, using the Google Gemini API and prompt engineering for resume parsing, tailored resume generation, and ATS grading.}
+    \Item{}{Built a parsing pipeline that turns uploaded resumes into structured data with 95\%+ accuracy, plus Gemini prompts that generate resumes tailored to a target job description and grades them.}
+    \Item{}{Developed an ATS grader that scores resumes against job requirements returning actionable suggestions to users.}
+    \Item{}{Designed and built 10+ RESTful API endpoints in Express.js supporting the AI workflows and core product features.}
+    \Item{}{Iterated on UI/UX through weekly code and feature reviews with senior engineers; built accessible React components reused across 5+ features.}
 }
 
 \Section{Skills}
 \ContentListNarrow{
     \Item{Programming Languages}{Python, C++, HTML, CSS, JavaScript, TypeScript, SQL}
     \Item{Frameworks \& Tools}{React.js, Express.js, Node.js, FastAPI, Postgres, MongoDB, AWS (Lambda, API Gateway, RDS), Jest }
+    \Item{AI \& LLMs}{TensorFlow, Gemini API, Prompt Engineering, Claude Code}
 }
 
 \Section{Projects}
-\Subsection{Course Chat}{}{}
+\Subsection{Course Chat}{{\color{gray}\ \textbar\ React.js, TypeScript, Node.js, MongoDB, Socket.io, JWT, Jest, GitHub Actions}}{}
 \ContentList{
-    \Item{}{Developed a full-stack web application with React.js (TypeScript) and Node.js, with MongoDB for data persistence.}
-    \Item{}{Implemented a real-time chat system using Socket.io with support for active user tracking, typing indicators, and instant message delivery.}
-    \Item{}{Designed RESTful API routes for user authentication (JWT), chat rooms, and message history retrieval.}
-    \Item{}{Integrated form validation, error handling, and secure data flows across front-end and back-end components.}
-    \Item{}{Built automated tests with Jest and configured a CI/CD pipeline using GitHub Actions for continuous integration.}
+    \Item{}{Built a real-time group chat app for CS classes with React (TypeScript), Node.js, MongoDB, and Socket.io, supporting active-user tracking, typing indicators, and instant message delivery.}
+    \Item{}{Designed JWT-authenticated REST APIs for user auth, chat rooms, and message history, with form validation and error handling across the stack.}
+    \Item{}{Wrote automated tests with Jest and configured a CI/CD pipeline via GitHub Actions.}
 }
-\Subsection{Nexus}{}{}
+\Subsection{Nexus}{{\color{gray}\ \textbar\ AWS CDK, AWS Lambda, API Gateway, EC2, Docker, Heroku}}{}
 \ContentList{
-    \Item{}{Collaborated in a team of 5 to design and develop a social gaming platform with a friend system, real-time chat, and recommendation.}
-    \Item{}{Utilized AWS CDK to provision and streamline cloud services for the application. Leveraging AWS services to build a scalable, reliable, and secure cloud infrastructure.}
-    \Item{}{Deployed backend using AWS Lambda with API Gateway, integrating a Heroku database for persistent storage.}
-    \Item{}{Configured EC2 instances and Docker containers to host and run the recommendation system.}
+    \Item{}{Co-built a social gaming platform with a team of 5, featuring a friend system, real-time chat, and a recommendation engine.}
+    \Item{}{Provisioned cloud infrastructure with AWS CDK and deployed the backend on Lambda and API Gateway with a Heroku database.}
+    \Item{}{Hosted the recommendation system in Docker containers on EC2.}
 }
 
 \end{document}
