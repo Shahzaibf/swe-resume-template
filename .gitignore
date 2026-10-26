@@ -4,4 +4,5 @@
 **/*.log
 **/*.out
 **/*.pdf
+!src/resume.pdf
 **/*.synctex.gz
